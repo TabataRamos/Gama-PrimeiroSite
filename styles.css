@@ -2,11 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: rgb(236, 233, 233);
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul {
     list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
 }
 
 a {
@@ -17,4 +21,48 @@ body {
     height: 100vh;
     background: linear-gradient(180deg, #000, #434343) no-repeat
 
+}
+
+img {
+    width: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+header ul {
+    display: flex;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 50px;
+}
+
+.container .name h5 {
+    font-size: 20px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto
+}
+
+.form {
+    width: 25%;
+    margin: 0 auto;
+}
+.form input {
+    width: 50%;
+}
+
+.form button {
+    width: 15%;
 }
