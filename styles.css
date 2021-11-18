@@ -31,11 +31,24 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px #434343;
 }
 
 header ul {
     display: flex;
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a {
+    transition: 500ms;
+}
+
+header ul li a:hover {
+    color: #434343
 }
 
 .container {
@@ -56,13 +69,29 @@ header ul {
 }
 
 .form {
-    width: 25%;
+    width: 40%;
     margin: 0 auto;
 }
 .form input {
     width: 50%;
+    padding: 5px 10px;
+    border: none;
+    
 }
 
 .form button {
-    width: 15%;
+    width: 20%;
+    padding: 5px 10px;
+    background-color: rgb(236, 233, 233);
+    color:black;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 500ms;
+
+}
+
+.form button:hover {
+    background-color: black;
+    color: rgb(236, 233, 233)
 }
