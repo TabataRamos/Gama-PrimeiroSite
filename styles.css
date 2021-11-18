@@ -24,7 +24,7 @@ body {
 }
 
 img {
-    width: 100px;
+    width: 125px;
 }
 
 header {
@@ -73,25 +73,32 @@ header ul li a:hover {
     margin: 0 auto;
 }
 .form input {
+    color: black;
+    font-weight: 500;
     width: 50%;
     padding: 5px 10px;
     border: none;
+    border-radius: 4px 0px 0px 4px;
     
 }
 
 .form button {
     width: 20%;
     padding: 5px 10px;
-    background-color: rgb(236, 233, 233);
-    color:black;
-    font-weight: 500;
+    background: #ea5455;
+    background-size: 200% 100%;
+    color: rgb(236, 233, 233);
+    font-weight: 700;
     border: none;
     cursor: pointer;
     transition: 500ms;
+    border-radius: 0px 4px 4px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
 
 }
 
 .form button:hover {
-    background-color: black;
+    background-color: #f08182;
     color: rgb(236, 233, 233)
 }
