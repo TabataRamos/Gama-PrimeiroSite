@@ -142,7 +142,7 @@ footer {
 }
 
 /* Telas para celular*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 553px) {
     body {
         background-attachment: fixed;
         background-position: center;
@@ -161,6 +161,7 @@ footer {
 
     header ul li{
         font-size: 10px;
+        padding: 5px
     }
 
     #about p {
@@ -175,6 +176,9 @@ footer {
 
 /* Telas Tablet*/
 @media only screen and (max-width: 768px) {
+    .container .name h1 {
+        font-size: 40px;
+    }
     .form {
         width: 100%;
     }
