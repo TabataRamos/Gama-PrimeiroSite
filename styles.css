@@ -169,7 +169,7 @@ footer {
     }
 
     .form {
-        width: 120%;
+        width: 100%;
         margin: center;
     }
 }
@@ -177,9 +177,16 @@ footer {
 /* Telas Tablet*/
 @media only screen and (max-width: 768px) {
     .container .name h1 {
-        font-size: 40px;
+        font-size: 27px;
+    }
+    header ul li{
+        font-size: 12px;
+        padding: 5px
     }
     .form {
         width: 100%;
+    }
+    .form input {
+        width: 60%;
     }
 } 
