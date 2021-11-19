@@ -33,6 +33,7 @@ header {
     align-items: center;
     padding: 10px;
     box-shadow: 1px 1px 10px 1px #434343;
+    margin-bottom: 45px;
 }
 
 header ul {
@@ -61,17 +62,48 @@ header ul li a:hover {
 
 .container .name h5 {
     font-size: 20px;
+    margin-top: 15px;
+}
+
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 500ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 500ms;
+}
+
+.active {
+    display: block !important;
 }
 
 #about p {
     max-width: 600px;
-    margin: 0 auto
+    margin: 0 auto;
+    padding: 10px
+
 }
 
 .form {
     width: 40%;
     margin: 0 auto;
+    margin-top: 30px;
 }
+
 .form input {
     color: black;
     font-weight: 500;
@@ -85,13 +117,14 @@ header ul li a:hover {
 .form button {
     width: 20%;
     padding: 5px 10px;
-    background: #ea5455;
+    background: linear-gradient(to right, #f08182 50%, #ea5455 50%);
     background-size: 200% 100%;
+    background-position: right bottom;
     color: rgb(236, 233, 233);
     font-weight: 700;
     border: none;
     cursor: pointer;
-    transition: 500ms;
+    transition: all 500ms ease-out;
     border-radius: 0px 4px 4px 0px;
     margin-top: 20px;
     margin-left: -5px;
@@ -99,6 +132,44 @@ header ul li a:hover {
 }
 
 .form button:hover {
-    background-color: #f08182;
+    background-position: left bottom;
+    /*background-color: #f08182;*/
     color: rgb(236, 233, 233)
+}
+
+
+/* Telas Tablet*/
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+} 
+
+
+/* Telas para celular*/
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 25px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    header ul li{
+        font-size: 10px;
+    }
+
+    #about p {
+        max-width: 80%;
+    }
+
+    .form {
+        width: 120%;
+        margin-left: -10%;
+    }
 }

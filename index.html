@@ -38,11 +38,15 @@
                     <h1>Tábata Brenda Ramos</h1>
                     <h5>Desenvolvedora Full Stack Junior</h5>
                 </div>
-                <div id= "arrow">
-                    <i class="fas fa-angle-down"></i>
+                <div onclick="displayAbout()" id= "arrow">
+                    <i id="animation" class="fas fa-angle-down"></i>
                 </div>
-                <div id="about">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eum aliquam adipisci harum praesentium laborum laudantium officia id itaque libero odit ducimus recusandae quam sed, aspernatur sit dignissimos fugiat iusto.</p>
+                <div style="display: none;" id="about">
+                    <p>Seja bem-vindo(a).</p>
+                    <p>Eu sou a Tábata, tenho 19 anos, sou de Taboão da Serra - São Paulo e atualmente sou aluna do Gama Academy (Hacker), com o objetivo de me tornar uma Desenvolvedora Full-Stack.</p>
+                    <p>Até então tive pouquíssimo contato com o universo da programação, mas decidi que iria me dedicar e mergulhar nesse mundo! Agora posso criar sites como esse aqui. Aliás, é o primeiro que fiz! E estou muito orgulhosa de mim mesma.</p>
+                    <p>Espero, num futuro próximo, estar apta para ocupar uma vaga Junior, pois oque eu mais desejo no momento é trabalhar com aquilo que gosto.</p>
+                    <p>Caso tenha gostado, não deixe de entrar em contato!</p>
                 </div>
                 <div class="form">
                     <div>
@@ -57,6 +61,16 @@
             </section>
 
         </main>
+
+        <script>
+            function displayAbout() {
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+                var display = document.getElementById('about');
+                display.classList.toggle('active');
+            }
+        </script>
+    
 
     </body>
 
