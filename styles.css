@@ -137,17 +137,16 @@ header ul li a:hover {
     color: rgb(236, 233, 233)
 }
 
-
-/* Telas Tablet*/
-@media only screen and (max-width: 768px) {
-    .form {
-        width: 100%;
-    }
-} 
-
+footer {
+    padding-top: 50px;
+}
 
 /* Telas para celular*/
 @media only screen and (max-width: 480px) {
+    body {
+        background-attachment: fixed;
+        background-position: center;
+    }
     .container .name h1 {
         font-size: 25px;
     }
@@ -170,6 +169,13 @@ header ul li a:hover {
 
     .form {
         width: 120%;
-        margin-left: -10%;
+        margin: center;
     }
 }
+
+/* Telas Tablet*/
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+} 
