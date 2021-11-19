@@ -19,8 +19,8 @@ a {
 
 body {
     height: 100vh;
-    background: linear-gradient(180deg, #000, #434343) no-repeat
-
+    background: linear-gradient(180deg, #000, #434343) no-repeat;
+    background-attachment: fixed;
 }
 
 img {
